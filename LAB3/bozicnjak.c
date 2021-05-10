@@ -43,7 +43,7 @@ void reindeer_process(int id) {
 }
 
 
-void north_poll_process(int id) {
+void north_pole_process(int id) {
     srand(time(NULL));
     int perc_odds;
     pid_t pid;
@@ -148,7 +148,7 @@ int main() {
     *reindeer_queue = 0;
     
     if (fork() == 0) {
-        north_poll_process(0);
+        north_pole_process(0);
         exit(0);
     }
 
