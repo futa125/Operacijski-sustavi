@@ -133,6 +133,13 @@ int main(int argc, char const* argv[]) {
             print_storage(storage, storage_size);
             break;
 
+        case 'D':
+            printf("Defragmenting...\n");
+            defragment(storage, storage_size);
+
+            print_storage(storage, storage_size);
+            break;
+
         default:
             printf("Invalid input key!\n");
             break;
